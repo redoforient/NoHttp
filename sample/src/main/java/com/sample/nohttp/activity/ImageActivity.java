@@ -60,7 +60,7 @@ public class ImageActivity extends BaseActivity implements HttpListener<Bitmap> 
         mTvResult = findView(R.id.tv_status);
         String[] contentStrings = getResources().getStringArray(R.array.activity_method_item);
         StringAbsListAdapter listAdapter = new StringAbsListAdapter(this, R.layout.item_abs_grid_text, contentStrings, mItemClickListener);
-        ((ListView) findView(R.id.gv)).setAdapter(listAdapter);
+        ((GridView) findView(R.id.gv)).setAdapter(listAdapter);
     }
 
     private OnItemClickListener mItemClickListener = new OnItemClickListener() {
